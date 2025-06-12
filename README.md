@@ -22,10 +22,11 @@ This project was created as a part of the Web Development Course Project cum Com
 
 ---
 
-## 💡 What I Did
+## 👤 My Contributions
 
-- Created and styled my personal portfolio section
-- Worked on layout, visuals and design for company pages
+- Designed and styled my portfolio page (inside `Portfolios/`)
+- Helped with layout and visual design of company pages
+- Focused on responsive styling using CSS
 
 ---
 
