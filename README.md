@@ -29,6 +29,13 @@ This project was created as a part of the Web Development Course Project cum Com
 
 ---
 
+## 📁 Folder Structure
+
+- `Madwebservices/` → Main company website
+- `Portfolios/` → Team member portfolios (including mine, though there is a link to this in the company website too.)
+
+---
+
 ## 🚫 Note
 
 This is a frontend-only project and has no working backend.
