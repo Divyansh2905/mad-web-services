@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="contactusstyle.css"> -->
+    <link rel="stylesheet" href="aboutusstyle.css">
+    <link rel="stylesheet" href="projectsstyle.css">
+    <link rel="stylesheet" href="chartsstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <title>Charts</title>
+</head>
+
+<body>
+    <div class="scroll-button">
+        <a href="#top" style="display: block;"><i class="revealed fas fa-arrow-up"></i></a>
+    </div>
+    <main>
+    <header>
+        <nav id="navbar">
+            <div class="revealed navbar">
+                <div class="revealed logo"><a href="index.html"><img src="Images/logo.png" alt=""></a></div>
+                <ul class="revealed menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="charts.html">Charts</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="contactus.html">Contact us</a></li>
+                    <div class="cancel-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </ul>
+            </div>
+            <div class="revealed menu-btn">
+                <i class="revealed fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- <section class="revealed contact contact-container" id="contact">
+        <div class="revealed what-content ">
+            <h1 class="revealed main_text what">Charts</h1>
+        </div>
+    </section> -->
+
+    <section class="revealed contact contact-container" id="contact">
+        <div class="revealed main_content ">
+            <div class="revealed container">
+                <div class="revealed form-container">
+                    <h2>Update Learning Curve Data</h2>
+                    <label for="c">C: </label>
+                    <input type="number" id="c" name="c" value="50">
+                    <label for="cpp">C++: </label>
+                    <input type="number" id="cpp" name="cpp" value="60">
+                    <label for="php">PHP: </label>
+                    <input type="number" id="php" name="php" value="70">
+                    <label for="java">JAVA: </label>
+                    <input type="number" id="java" name="java" value="80">
+                    <label for="web_design">WEB DESIGN: </label>
+                    <input type="number" id="web_design" name="web_design" value="90">
+                    <label for="python">PYTHON: </label>
+                    <input type="number" id="python" name="python" value="100">
+                    <div class="revealed btn-contain">
+                        <a href="#barChart"><button onclick="updateCharts()">Update Charts</button></a>
+                    </div>
+                </div>
+                <div class="revealed chart-container">
+                    <canvas id="barChart"></canvas>
+                </div>
+                <div class="revealed chart-container">
+                    <canvas id="pieChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <div class="footer">
+            <div class="revealed footer-first">
+                <ul>
+                    <li><h2>Contact Information</h2></li>
+                    <li>Email: <a href="mailto:info@madwebservices.com">info@madwebservices.com</a></li>
+                    <li>Phone No. : <a href="tel:+916205826146">+91 6205826146</a></li>
+                    <li>Address: 123A Heritage street, Kolkata - 11</li>
+                </ul>
+            </div>
+            <div class="revealed footer-second">
+                <ul>
+                    <!-- <li><h2>Quick Links</h2></li> -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="charts.html">Charts</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="revealed media-icons">
+            <ul>
+                <li><a href="#" ><i
+                            class="revealed fab fa-facebook-f"></i></a>
+                    <a href="#" ><i class="revealed fab fa-twitter"></i></a>
+
+                    <a href="#" ><i
+                            class="revealed fab fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="revealed text-center">
+            Copyright &#169; madwebservices.com | All rights reserved
+        </div>
+
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chartsjs.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>

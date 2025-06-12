@@ -1,0 +1,118 @@
+.containerteam{
+    background-color: #2564a0;
+    padding-bottom: 30px;
+}
+
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    place-items: center;
+    justify-content: center;
+    margin: 5%;
+    margin-top: 3%;
+}
+.team-heading {
+    text-align: center;
+    margin-bottom: 32px;
+    position: relative;
+    z-index: 2;
+}
+.main-head-team{
+    color: aliceblue;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.main-p-team{
+    color: floralwhite;
+    font-size: 18px;
+}
+
+.team-card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s !important;
+    background-color: white;
+    padding: 16px;
+    margin: 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px #409bf05f;
+    position: relative;
+    z-index: 2;
+}
+.team-card:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 8px 16px #00000097 !important;
+}
+
+.team-card:active{
+    transform: scale(0.8) !important;
+}
+.team-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+.team-card h3 {
+    margin: 16px 0 8px;
+}
+.team-card p {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+.team-card .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 0 0 16px 0;
+}
+.social-icons a {
+    color: #777;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: #1861a5;
+}
+.team-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+.team-col {
+    flex: 1;
+    flex-basis: 30%;
+    /* min-width: 250px; */
+    max-width: 30%;
+    margin: 16px;
+    position: relative;
+}
+@media (max-width: 1060px) {
+    .team-col {
+        flex-basis: 45%;
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .team-col {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-col {
+        flex-basis: 100%;
+        max-width: 100%;
+        margin: 8px;
+    }
+}

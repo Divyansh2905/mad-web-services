@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Yanone+Kaffeesatz:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 2000px;
+  margin: auto;
+  background: rgb(21, 106, 183);
+  background: linear-gradient(
+    0deg,
+    rgba(21, 106, 183, 1) 0%,
+    rgba(6, 13, 36, 1) 100%
+  );
+}
+
+.main_content {
+  font-size: 1.7rem;
+  margin: 15% auto 10% auto !important;
+}
+.main_text {
+  color: #3a81c3;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+.content-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-contact .content {
+  min-width: 50%;
+  max-width: 90%;
+  padding: 2% 2% 5% 2%;
+  text-align: center;
+  color: aliceblue;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0);
+  border-radius: 15px;
+  background: rgb(215 234 255 / 9%);
+}
+
+p{
+  font-size: 20px;
+}
+
+.what-content{
+  font-size: 1.7rem;
+  margin-bottom: 10%;
+}
+.what{
+  color: #f4f4f4 !important;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.service {
+  flex: 1 1 300px;
+  max-width: 350px;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgb(215 234 255 / 9%);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service i {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #96c9ff;
+}
+
+.service h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #ededed;
+}
+
+.service p {
+  font-size: 1rem;
+  color: #cbcbcb;
+}
+
+
+@media (max-width: 800px) {
+  .contact-container {
+    padding: 16px;
+    margin-top: 11%;
+  }
+}
+@media (max-width: 550px) {
+  .contact-container {
+    padding: 16px;
+    margin-top: 15%;
+  }
+}
+@media (max-width: 450px) {
+  .contact-container {
+    padding: 16px;
+    margin-top: 25%;
+  }
+}
+@media (max-width: 768px) {
+  .services-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .service {
+      max-width: 90%;
+  }
+}

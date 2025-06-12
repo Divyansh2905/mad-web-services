@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Yanone+Kaffeesatz:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+body {
+  max-width: 2000px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.556);
+  /* background-image: url("Images/background.avif"); */
+  background-image: url("https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+.main_content{
+  font-size: 1.7rem;
+  margin: 10% auto !important;
+}
+.main_text{
+  color: #3a81c3;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+.contact-container {
+  padding: 16px;
+}
+
+.content-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.content-contact form {
+  width: 670px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0);
+  border-radius: 15px;
+  background: rgb(215 234 255 / 9%);
+  backdrop-filter: blur(100px);
+  flex-wrap: wrap;
+}
+
+.content-contact form h1 {
+  text-align: center;
+}
+
+form{
+  padding-top: 10px;
+}
+
+.content-contact form .input {
+  width: 290px;
+  height: 40px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  margin-top: 30px;
+  background: none;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+.content-contact form .input::placeholder {
+  color: #bfbfbf;
+}
+
+.content-contact form textarea::placeholder {
+  color: #d5d5d5;
+}
+
+.content-contact form #lastName,
+.content-contact form #mobile {
+  margin-left: 8px;
+}
+
+.content-contact form textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  color: #ffffff;
+  font-weight: 200;
+  font-size: 15px;
+  padding: 10px;
+  outline: none;
+  min-width: 600px;
+  max-width: 600px;
+  min-height: 40px;
+  max-height: 40px;
+  margin-top: 35px;
+}
+
+.content-contact form #button {
+  align-self: center;
+  border: none;
+  background-color: #409bf0;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 0;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.content-contact form #button:hover {
+  background-color: #025db2;
+}
+
+.content-contact form #button:active {
+  transform: scale(0.9);
+}
+
+@media (max-width: 730px) {
+  .contact form {
+    width: 90vw;
+  }
+
+  .content-contact form textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 80vw;
+    max-width: 600px;
+    min-height: 40px;
+    max-height: 40px;
+  }
+  .main_content{
+    margin: 18% auto !important;
+  }
+}
+
+@media(max-width:640px){
+  .content-contact form #lastName,
+  .content-contact form #mobile {
+    margin-left: 0px;
+  }
+}
+
+@media(max-width:550px){
+  .contact-container{
+      padding: 16px;
+      margin-top: 15%;
+  }
+}
+@media(max-width:450px){
+  .contact-container{
+      padding: 16px;
+      margin-top: 25%;
+  }
+}

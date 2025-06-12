@@ -1,0 +1,92 @@
+.main_content {
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px;
+    padding: 20px;
+    padding-top: 50px;
+    background: rgb(215 234 255 / 9%);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-container {
+    margin-bottom: 20px;
+}
+
+.form-container h2 {
+    color: #3a81c3;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
+    padding-bottom: 35px;
+}
+
+.form-container label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.form-container input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #325ba3;
+    color: #f0f0f0;
+    font-size: 28px;
+}
+
+.btn-contain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container button {
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 25px;
+    font-weight: 400;
+    color: #f5f5f5;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    transition: all 0.2s ease;
+}
+.form-container button:hover{
+    border-color: transparent;
+    background-color: #2d88de;
+    color: #ffffff;
+    transition-duration: 0.5s;
+    transform: scale(1.1) !important;
+}
+
+.chart-container {
+    display: flex;
+    margin: 20px 0;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    justify-content: center;
+}
+
+canvas {
+    width: 92% !important;
+    height: auto !important; /* Ensure the canvas takes full height */
+    background-color: #f0f0f000;
+    border-radius: 10px;
+    padding: 20px;
+}
